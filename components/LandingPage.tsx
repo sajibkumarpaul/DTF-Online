@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { UserRole } from '../types';
 import { Shirt, Rocket, Wallet, CheckCircle } from 'lucide-react';
@@ -52,7 +51,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartBuilding, onLogin }) =
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Why Choose PrintFlow BD?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Why Choose Sell Point?</h2>
             <p className="text-slate-500">We handle the tech and production; you focus on creativity.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { User, UserRole, CartItem } from './types';
 import Layout from './components/Layout';
@@ -16,7 +15,7 @@ const App: React.FC = () => {
 
   // Load cart from localStorage on mount
   useEffect(() => {
-    const savedCart = localStorage.getItem('printflow_cart');
+    const savedCart = localStorage.getItem('sellpoint_cart');
     if (savedCart) {
       try {
         setCart(JSON.parse(savedCart));
@@ -28,14 +27,14 @@ const App: React.FC = () => {
 
   // Save cart to localStorage on change
   useEffect(() => {
-    localStorage.setItem('printflow_cart', JSON.stringify(cart));
+    localStorage.setItem('sellpoint_cart', JSON.stringify(cart));
   }, [cart]);
 
   const handleLogin = (role: UserRole) => {
     setUser({
       id: 'u1',
       name: role.charAt(0).toUpperCase() + role.slice(1) + ' User',
-      email: `${role}@printflow.com`,
+      email: `${role}@sellpoint.com`,
       phone: '01700000000',
       role: role,
       status: 'active',

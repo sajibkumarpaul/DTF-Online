@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { User, UserRole, CartItem } from '../types';
 import { ShoppingCart, User as UserIcon, LogOut, LayoutDashboard, Brush, X, Trash2, ShoppingBag } from 'lucide-react';
@@ -36,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({
                 <Brush className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-black tracking-tighter text-slate-900">
-                PrintFlow<span className="text-indigo-600">BD</span>
+                Sell<span className="text-indigo-600">Point</span>
               </span>
             </div>
 
@@ -163,7 +162,7 @@ const Layout: React.FC<LayoutProps> = ({
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-6">
               <Brush className="w-8 h-8 text-indigo-500 mr-2" />
-              <span className="text-3xl font-black text-white tracking-tighter">PrintFlow BD</span>
+              <span className="text-3xl font-black text-white tracking-tighter">Sell Point</span>
             </div>
             <p className="text-lg max-w-sm leading-relaxed mb-8">Empowering the next generation of apparel brands in Bangladesh with world-class DTF technology.</p>
             <div className="flex gap-4">
@@ -192,7 +191,7 @@ const Layout: React.FC<LayoutProps> = ({
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-bold uppercase tracking-widest">
-          <p>© 2024 PrintFlow Bangladesh. All Rights Reserved.</p>
+          <p>© 2024 Sell Point. All Rights Reserved.</p>
           <div className="flex gap-8">
             <span>Privacy</span>
             <span>Terms</span>
