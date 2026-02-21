@@ -1,5 +1,5 @@
 
-export const DTF_PRICE_PER_METER = 380; // Editable by admin
+export const DTF_PRICE_PER_SQ_INCH = 0.40;
 export const INCH_TO_METER = 39.37;
 export const MAX_PRINT_WIDTH_INCH = 11.7; // A3 width
 export const MAX_PRINT_HEIGHT_INCH = 16.5; // A3 height

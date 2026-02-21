@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { 
-  DTF_PRICE_PER_METER, 
+  DTF_PRICE_PER_SQ_INCH, 
   INCH_TO_METER, 
   APPAREL_DATA, 
   MAX_PRINT_WIDTH_INCH, 
@@ -796,8 +796,8 @@ const CanvasBuilder: React.FC<CanvasBuilderProps> = ({ onBack, onAddToCart }) =>
     saveToHistory();
   };
 
-  const frontCost = (printStats.frontHeight / INCH_TO_METER) * DTF_PRICE_PER_METER;
-  const backCost = (printStats.backHeight / INCH_TO_METER) * DTF_PRICE_PER_METER;
+  const frontCost = printStats.frontWidth * printStats.frontHeight * DTF_PRICE_PER_SQ_INCH;
+  const backCost = printStats.backWidth * printStats.backHeight * DTF_PRICE_PER_SQ_INCH;
   const grandTotal = ((onlyPrint ? 0 : selectedProduct.basePrice) + frontCost + backCost) * quantity;
 
   const handleAddToCartClick = () => {
